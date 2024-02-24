@@ -63,13 +63,16 @@ const pause = (ms: number) => {
 };
 
 onMounted(async () => {
-  while (true) {
+  let i = 0;
+  while (i < words.value.length) {
     await typeLetter();
     await pause(1500);
     await deleteLetter();
     await pause(500);
     currentWordIndex.value = (currentWordIndex.value + 1) % words.value.length;
+    i++;
   }
+  await typeLetter();
 });
 </script>
 

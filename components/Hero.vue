@@ -1,6 +1,8 @@
 <template>
-  <section class="container mx-auto p-4">
-    <div class="xl:flex gap-16 justify-center items-center h-screen space-y-16">
+  <section class="container mx-auto px-4">
+    <div
+      class="flex flex-col xl:flex-row gap-16 justify-center items-center h-screen"
+    >
       <HeroText />
       <HeroImage />
     </div>

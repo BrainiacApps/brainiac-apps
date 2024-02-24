@@ -1,5 +1,4 @@
 <template>
-  <Title>Brainiac Apps</Title>
   <main>
     <Hero />
   </main>
